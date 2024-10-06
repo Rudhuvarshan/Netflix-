@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href=
+    "https://static.vecteezy.com/system/resources/previews/017/396/814/original/netflix-mobile-application-logo-free-png.png"
+            type="image/x-icon" />
+    <style>
+       body{
+        margin: 0px;
+       }
+        
+        .main1 img{
+           position: relative;
+            width:100vw ;
+            height: 100vh;
+            filter: brightness(25%);
+        }
+        .main12 img{
+            position: absolute;
+            width: 150px;
+            height: 40px;
+           filter: brightness(90%);
+           top: 20px;
+            margin-left: 40px;
+        }
+        .main13{
+            position: absolute;
+            text-align: center;
+            justify-content: center;
+            color: aliceblue;
+            width: 70vw;
+            height: 40vh;
+            top: 170px;
+            left: 250px;
+            line-height: 0.6
+            ;
+
+           font-size: xx-large;
+           font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        .p1{
+            position: absolute;
+            width: 70vw;
+            height: 40vh;
+            top: 440px;
+            left: 410px;
+            color: aliceblue;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mo{
+            position: absolute;
+            left: 380px;
+            top: 550px;
+           
+        }
+        #mo input{
+            width: 590px;
+            height: 60px;
+            background-color: rgb(0, 0, 0,70%);
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        #mo ::placeholder{
+            padding: 20px;
+            font-size: larger;
+        }
+        #mo button{
+            width: 200px;
+            height: 66px;
+            background-color:red;
+            color: aliceblue;
+            border-radius: 5px;
+            font-size: x-large;
+        }
+        #lan{
+            position: absolute;
+            top: 20px;
+            right: 50px;
+        }
+        #lan select{
+            width: 120px;
+            height: 40px;
+            border-radius: 2px;
+            background-color: rgb(0, 0, 0,30%);
+            color: aliceblue;
+        }
+       #lan button{
+        width:120px;
+        height: 41px;
+        color: aliceblue;
+        background-color: red;
+        /* transition: transform:0.1sec ease,backgroundColor; */
+       }
+       #sign:hover{
+       filter: brightness(70%);
+        transition: 0.1s;
+       }
+       #start:hover{
+        filter: brightness(70%);
+        transition: 0.1s;
+       }
+       #cl{
+        color: aliceblue;
+        font-size: larger;
+        padding-left: 20px;
+       }
+       .snap img{
+        height: 100px;
+        width: 1550px;
+        filter: brightness(100%);
+       }
+       .snap{
+        position: absolute;
+        top: 700px;
+       }
+       .trend{
+        background-color:black;
+        height: 500px;
+        width: 100vw;
+        position: absolute;
+        top: 800px;
+       }
+       .movie{
+        position: absolute;
+        background-color:black;
+        margin-left: 100px;
+        width: 255px;}
+       
+       #na{
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        font-size: x-large;
+       }
+       #s1{
+        height: 40px;
+        width: 110px;
+        color: aliceblue;
+        background-color:black;
+        border: 1px solid grey;
+        border-radius: 3px;
+        
+       }
+       #s2{
+        height: 40px;
+        width: 110px;
+        margin-right: 100px;
+        color: aliceblue;
+        background-color: black;
+        border: 1px solid grey;
+        border-radius: 3px;
+        
+       }
+       .coll{
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        background-color:black;
+        top: 200px;
+        padding-left: 150px;
+        
+       }
+       .coll img{
+        width: 200px;
+        height: 260px;
+        filter: brightness(100%);
+       }
+       
+       
+       #m1:hover{
+        width: 220px;
+        height: 280px;
+        transition: 0.3s ease;
+
+       }
+       #m2:hover{
+        width: 220px;
+        height: 280px;
+        transition: 0.3s ease;
+
+       }
+       #m3:hover{
+        width: 220px;
+        height: 280px;
+        transition: 0.3s ease;
+
+       }
+       #m4:hover{
+        width: 220px;
+        height: 280px;
+        transition: 0.3s ease;
+
+       }
+       #m5:hover{
+        width: 220px;
+        height: 280px;
+        transition: 0.3s ease;
+
+       }
+
+       .c2{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        margin-left: 400px;
+        top: 1000px;
+        background-color: aliceblue;
+       }
+       .c2 img{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        left: opx;
+    }
+    .c3{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        margin-left: 650px;
+        top: 1000px;
+        background-color: aliceblue;
+       }
+       .c3 img{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        left: opx;
+    }
+    .c4{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        margin-left: 900px;
+        top: 1000px;
+        background-color: aliceblue;
+       }
+       .c4 img{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        left: opx;
+    }
+    .c5{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        margin-left: 1150px;
+        top: 1000px;
+        background-color: aliceblue;
+       }
+       .c5 img{
+        position: absolute;
+        width:200px;
+        height: 260px;
+        filter: brightness(100%);
+        left: opx;
+    }
+    .next1{
+        position: absolute;
+        width: 100vw;
+        height: 70vh;
+        background-color:black;
+        top: 1300px;
+        color: aliceblue;
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+       .next1 img{
+        width: 1300px;
+        padding-left: 110px;
+       }
+       #letter{
+        padding-left: 100px;
+       }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <img src="assets\Back.jpg">
+        <div class="main12">
+            <img src="assets\logonetflix.svg">
+        </div>
+         <div class="main13">
+            <h1><b>Unlimited movies,TV</b></h1>
+            <h1><b>shows and more.</b></h1>
+            <h7>Starts at ₹149. Cancel anytime.</h7>
+            
+         </div>
+         <div class="p1">
+            <p>Ready to watch?Enter your email to create or restart your membership</p>
+
+         </div>
+         <div class="main14m" id="mo">
+            <table>
+                <tr>
+                <td><input placeholder="Email address" type="email" id="cl"></td>
+                <td><button id="start">Get started ></button></td>
+            </tr>
+            </table>
+         </div>
+         <div id="lan">
+            <table>
+                <tr>
+                    <td><select>
+                        <option>🌐 English</option>
+                        <option>தமிழ்</option>
+                    </select></td>
+                    <td><button id="sign">Sign in</button></td>
+                </tr>
+            </table>
+         </div>
+         <div class="snap">
+            <img src="assets\snap.png">
+         </div>
+         <div class="trend">
+
+         <div class="movie">
+            <p id="na">Trending Now </p>
+        <table>
+           
+    <tr>
+        <td><select id="s1">
+            <option>India</option>
+            <option>Global</option>
+        </select></td><td> </td><td>  </td>
+        <td><select id="s2"><option>Movies</option>
+        <option>TV Shows</option></select></td>
+    </tr></table>
+         </div>
+         <div class="coll">
+            <img src="assets\movie1.png" id="m1">
+            </div></div>
+            <div class="c2">
+            <img src="assets\movie2.png" id="m2">
+            </div>
+            <div class="c3">
+            <img src="assets\movie3.png" id="m3">
+            </div>
+            <div class="c4">
+            <img src="assets\movie4.png" id="m4">
+            </div>
+            <div class="c5">
+
+            <img src="assets\movie5.png" id="m5"></div>
+        </div>
+        <div class="next1">
+            <p id="letter">More reasons to join</p>
+            <img src="assets\next.png" alt="">
+        </div>
+
+        
+       
+        
+    </div>
+    
+</body>
+</html>
